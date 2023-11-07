@@ -1,0 +1,87 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+/* Style the "active" navigation link */
+nav a.active {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block; /* Show sections by default */
+}
+
+
+section#skills img {
+    width: 100px; /* Adjust the width to your preference */
+    height: 100px; /* Adjust the height to your preference */
+    margin: 10px; /* Adjust the margin to your preference */
+    display: inline-block;
+}
+
+/* Create a grid container for the skills images */
+.skills-grid {
+    text-align: center; /* Center-align the grid */
+}
+
+/* Apply the grid container to the "Technical Skills" section */
+section#skills .skills-grid img {
+    width: 100px; /* Adjust the width to your preference */
+    height: 100px; /* Adjust the height to your preference */
+    margin: 10px; /* Adjust the margin to your preference */
+    display: inline-block;
+}
+
+
+footer {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
