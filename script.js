@@ -41,3 +41,32 @@ navLinks.forEach((link, index) => {
         sections[index].style.display = 'block';
     });
 });
+
+// Highlight the active section as you scroll
+window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+
+    sections.forEach((section, index) => {
+        if (scrollPosition >= section.offsetTop && scrollPosition < section.offsetTop + section.offsetHeight) {
+            navLinks[index].classList.add('active');
+        } else {
+            navLinks[index].classList.remove('active');
+        }
+    });
+});
+
+// Example smooth scrolling with added offset for the header
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        const headerHeight = document.querySelector('header').offsetHeight;
+
+        window.scrollTo({
+            top: targetElement.offsetTop - headerHeight,
+            behavior: 'smooth'
+        });
+    });
+});
