@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hari Krishna Bagula - Web Portfolio</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <h1 class="header-title">Hari Krishna Bagula</h1>
+            <p class="header-description">Oracle EBS Technical Developer and Data Analyst</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about" class="active">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="dark-mode-toggle"></div>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Accomplished professional with 5 years of experience as an Oracle Apps Technical Consultant, specializing in SQL, PLSQL, Python, and reporting tools. Proven expertise in designing, implementing, and optimizing data solutions facilitates strategic decision-making. Adept at leveraging Python programming concepts to build robust data pipelines and analytical tools. Possess a deep understanding of spend analytics projects, complemented by a strong foundation in data engineering and analysis. Ready to contribute dynamic problem-solving skills, technical acumen, and a passion for innovation to excel in roles involving Data Engineering, Data Analysis, or Software Development.
+        </p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>
+            <strong>Master of Science</strong> (Expected May 2024)<br>
+            Arizona State University, Phoenix, AZ<br>
+            GPA: 4.0/4.0
+        </p>
+        <p>
+            <strong>Bachelor of Technology</strong> (May 2017)<br>
+            GITAM University, Hyderabad, India<br>
+            GPA: 7.53/10
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+		<div class="skills-container">
+			<div class="skills-grid">
+            <ul class="skills-list">
+                <li><img src="python.png" alt="Python"><p>Python</p></li>
+                <li><img src="sql.png" alt="SQL"><p>SQL</p></li>
+                <li><img src="plsql.png" alt="PLSQL"><p>PLSQL</p></li>
+                <li><img src="shell.png" alt="Shell Scripting"><p>Shell Scripting</p></li>
+                <li><img src="java.png" alt="Java"><p>Java</p></li>
+                <li><img src="html.png" alt="HTML"><p>HTML</p></li>
+                <li><img src="javascript.png" alt="JavaScript"><p>JavaScript</p></li>
+                <li><img src="css.png" alt="CSS"><p>CSS</p></li>
+                <li><img src="soql.png" alt="SOQL"><p>SOQL</p></li>
+            </ul>
+			</div>
+		</div>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+
+        <div class="experience-item">
+            <p class="experience-title">
+                <strong>Technology Consultant, Data Intensity LLC, Hyderabad, India (August 2017 - December 2020)</strong>
+            </p>
+            <ul class="experience-bullets">
+                <li>Tailored Reports, Forms, Interfaces, Conversions, Extensions, and Workflows to meet specific client requirements.</li>
+                <li>Created inbound and outbound interfaces across P2P and O2C Modules.</li>
+                <li>Teamed up with subject matter experts to identify and effectively expand four technical solutions.</li>
+                <li>Enhanced script efficiency by 20% through the implementation of advanced PLSQL techniques.</li>
+                <li>Collaborated closely with the onshore team to develop various technical components. Developed an automated shell script for LDT execution, leading to a 15% reduction in migration time.</li>
+                <li>Utilized advanced XML BI Publisher concepts to craft interactive reports.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <p class="experience-title">
+                <strong>Spend Analytics, Data Intensity LLC, Hyderabad, India (January 2021 - January 2022)</strong>
+            </p>
+            <ul class="experience-bullets">
+                <li>Designed database architecture for Analytics projects to improve the retrieval speed and data consistency.</li>
+                <li>Enhanced Dashboard's performance by implementing advanced SQL and Database Schema Concepts.</li>
+                <li>Utilized SQL*LOADER for data import from various sources, accomplishing a 50% improvement in data load speed compared to traditional methods.</li>
+                <li>Integrated advanced analytical SQL functions and advanced PLSQL Concepts for query optimization.</li>
+                <li>Demonstrated hands-on skill in STAR schema utilization and created OBIEE dashboards for elaborated insights.</li>
+                <li>Analyzed Oracle Spend Classifier tool, revising classification accuracy by 25% from 65% to 90% and streamlining processes for a 30% reduction in processing time.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <p class="experience-title">
+                <strong>Salesforce Developer, Data Intensity LLC, Hyderabad, India</strong>
+            </p>
+            <ul class="experience-bullets">
+                <li>Established a seamless connection between Salesforce and Oracle EBS, enabling real-time order processing. Reduced order processing times by an average of 40%, enhancing order fulfillment speed.</li>
+                <li>Conducted rigorous unit and integration testing, achieving a 95% test pass rate, ensuring the reliability and accuracy of the integration.</li>
+                <li>Designed and implemented a custom Lightning Web Component (LWC) that seamlessly integrated Salesforce with our Oracle E-Business Suite (EBS) to automate order creation and processing. This solution significantly reduced manual data entry, resulting in a 40% increase in order processing efficiency and a substantial reduction in processing errors.</li>
+            </ul>
+        </div>
+    </section>
+
+   <section id="projects" class="center-content">
+   
+    <div class="project-heading">
+        <h2>Projects</h2>
+        <div class="navigation">
+            <button onclick="showProject(1)" class="project-button" id="project1-button">1</button>
+            <button onclick="showProject(2)" class="project-button" id="project2-button">2</button>
+        </div>
+    </div>
+
+    <div class="projects-container">
+        <div class="project" id="project1">
+            <strong>Pixel Color Detection using Python (August 2022 - December 2022)</strong>
+            <ul>
+                <li>Employed OpenCV to detect pixel colors from images. Referenced color CSV for accurate color identification.</li>
+                <li>Analyzed bike rental data using diverse models to achieve high prediction accuracy.</li>
+            </ul>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://codeinplace-2021.netlify.app/2021/showcase/915" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="project" id="project2">
+            <strong>Crypto Currency Analysis and Visualization (August 2023 - November 2023)</strong>
+            <ul>
+                <li>Supervised a 4-member team in the successful completion of the "Cryptocurrency Analysis and Visualization" project.</li>
+                <li>Conducted sentiment analysis with an 88% accuracy rate, evaluating the impact of news and social media sentiment on cryptocurrency prices.</li>
+                <li>Applied advanced time series forecasting techniques to attain a prediction accuracy rate surpassing 90% for cryptocurrency price movements.</li>
+                <li>Executed machine learning models, yielding price prediction models with a Mean Absolute Error (MAE) persistently below 5%.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you would like to collaborate on a project or have any questions, please feel free to reach out to me:</p>
+        <p>
+            Email: <a href="mailto:hbagula@asu.edu">hbagula@asu.edu</a><br>
+            LinkedIn: <a href="www.linkedin.com/in/hari-krishna-bagula-80568b154" target="_blank">LinkedIn Profile</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hari Krishna Bagula</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

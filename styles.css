@@ -1,0 +1,313 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-content {
+    max-width: 800px;
+    width: 100%;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 2em;
+}
+
+.header-description {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 100;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav a.active {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; /* Center text horizontally */
+}
+
+/* Specific styling for ul elements within section#experience */
+section#experience ul {
+    list-style-type: disc;
+    margin-left: 0;
+    padding-left: 0; /* Set padding-left to 0 to remove extra space between bullet point and text */
+}
+
+section#experience li {
+    text-align: left;
+}
+
+/* Add a specific style for the "Skills" section to handle the scrolling effect */
+section#skills {
+    overflow: hidden;
+}
+
+section#experience {
+    color: #333;
+}
+
+#projects li {
+    text-align: left;
+    margin-bottom: 10px; /* Add some spacing between list items */
+}
+
+
+section#skills img {
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    display: inline-block;
+}
+
+footer {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.skills-grid {
+    display: flex;
+    overflow: hidden;
+}
+
+.skills-grid ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.skills-grid li {
+    margin: 0 20px;
+    transition: transform 0.5s ease;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.experience-bullets {
+    padding-left: 20px;
+    list-style: none;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.experience-bullets ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.experience-bullets li {
+    animation: fadeInRight 1s forwards;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.skills-container {
+    overflow: hidden;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    animation: moveSkills 20s linear infinite;
+}
+
+.skills-list li {
+    margin:20px;
+}
+
+@keyframes moveSkills {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.dark-mode {
+    background-color: #121212; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+.dark-mode nav {
+    background-color: #333; /* Dark navigation background color */
+}
+
+.dark-mode nav a {
+    color: #fff; /* Light navigation text color */
+}
+
+.dark-mode section {
+    background-color: #1a1a1a; /* Dark section background color */
+    color: #fff; /* Light section text color */
+}
+
+.dark-mode footer {
+    background-color: #333; /* Dark footer background color */
+    color: #fff; /* Light footer text color */
+}
+
+.projects-container {
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.5s ease; /* Add smooth transition for animation */
+}
+
+.project {
+    flex: 0 0 100%; /* Each project takes 100% width initially */
+}
+
+/* CSS styles for Projects section */
+/* CSS styles for Projects section */
+
+#projects.center-content {
+    text-align: center; /* Center text horizontally */
+}
+
+.project-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; /* Center text horizontally */
+}
+
+.navigation {
+    display: flex;
+    gap: 10px;
+    margin-left: auto; /* Push navigation to the right */
+}
+
+.project-button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.project-button.active {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+
+
+
+
+
